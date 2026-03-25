@@ -1,20 +1,20 @@
-// Function to render your items
+// Function to render your items.
 const renderItems = (data) => {
-	// The `ul` where the items will be inserted
+	// The `ul` where the items will be inserted.
 	const dataList = document.getElementById('data-list')
 
-	// Loop through each item in the data array
+	// Loop through each item in the data array:
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 	data.forEach((item) => {
-		let conditionalClass = '' // Set an empty class variable
+		let conditionalClass = '' // Set an empty class variable.
 
-		// Conditional if this is `false` (“not true”)
+		// Conditional if this is `false` (“not true”):
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 		if (!item.alsoWrote) {
-			conditionalClass = 'faded' // Update the variable
+			conditionalClass = 'faded' // Update the variable.
 		}
 
-		// Make a “template literal” as we have before, inserting your data (and maybe the class)
+		// Make a “template literal” as we have before, inserting your data (and maybe the class):
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		let listItem =
 			`
