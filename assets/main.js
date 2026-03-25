@@ -1,7 +1,7 @@
 // Function to render your items.
-const renderItems = (data) => {
+let renderItems = (data) => {
 	// The `ul` where the items will be inserted.
-	const dataList = document.getElementById('data-list')
+	let dataList = document.getElementById('data-list')
 
 	// Loop through each item in the data array:
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
