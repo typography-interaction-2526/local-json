@@ -10,7 +10,7 @@ const renderItems = (data) => {
 
 		// Conditional if this is `false` (“not true”)
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-		if (!item.alsoWasWriter) {
+		if (!item.alsoWrote) {
 			conditionalClass = 'faded' // Update the variable
 		}
 
