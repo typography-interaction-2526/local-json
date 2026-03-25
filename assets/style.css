@@ -9,10 +9,10 @@
 body {
 	font-family: sans-serif;
 	padding: var(--spacing);
-	padding-bottom: 33vh;
+	padding-block-end: 33vh;
 }
 
-aside { margin-bottom: calc(4 * var(--spacing)); }
+aside { margin-block-end: calc(4 * var(--spacing)); }
 
 h1 { font-size: 200%; }
 
@@ -25,12 +25,14 @@ em { font-style: italic }
 ul {
 	display: grid;
 	gap: calc(4 * var(--spacing));
-	margin-top: calc(4 * var(--spacing));
+	margin-block-start: calc(4 * var(--spacing));
 }
 
 li {
 	display: grid;
 	gap: var(--spacing);
 }
+
+img { max-inline-size: 10rem; }
 
 .faded { opacity: 0.333 }
